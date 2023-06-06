@@ -13,7 +13,7 @@ body {
     object-fit: contain;
     max-height: 100px;
     margin-right: 10px;
-    transition: transform 450ms;
+    transition: transform 400ms;
 }
 
 .row__posters {
