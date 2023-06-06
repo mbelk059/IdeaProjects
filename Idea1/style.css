@@ -128,10 +128,35 @@ body {
     background-color: #111;
 }
 
+/* following 4 are so search + home buttons only appear when u scroll down*/
+.nav__search {
+    display: none;
+}
+
+.nav__home__button {
+    display: none;
+}
+
+.nav__black .nav__search {
+    display: block;
+}
+
+.nav__black .nav__home__button {
+    display: block;
+}
+
+.nav__home__button {
+    text-decoration: none;
+    color: white;
+    text-decoration: none;
+}
+
+/* when u click netflix logo it scrolls to the top of the index page instead of jumping there right away*/
 html {
     scroll-behavior: smooth;
 }
 
+/* start of profile.html page*/
 .profile__container {
     text-align: center;
     margin-top: 200px;
@@ -190,6 +215,7 @@ html {
     margin: 0.5rem;
 }
 
+/* remove underline from names in profile */
 .profile__item a {
     text-decoration: none;
     color: inherit;
@@ -201,3 +227,28 @@ html {
 .profile__item a:hover {
     transform: scale(1.05);
 }
+
+.nav__search {
+    margin-right: 10px;
+}
+
+.nav__search__input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav__search-button {
+    padding: 5px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .nav__home-button {
+    color: #fff;
+    margin-right: 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }

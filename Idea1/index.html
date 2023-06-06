@@ -13,6 +13,15 @@
         <img src="images/netflix-logo.png" alt="" class="nav__logo" />
       </a>
 
+      <div class="nav__search">
+        <input type="text" placeholder="Search" class="nav__search__input" />
+        <button class="nav__search__button">
+          <i class="fas fa__search"></i>
+        </button>
+      </div>
+
+      <a href="#" class="nav__home__button">Home</a>
+
       <a href="profile.html"
         ><img src="images/netflix-avatar.png" alt="" class="nav__avatar" />
       </a>
@@ -237,12 +246,18 @@
       }
 
       const nav = document.getElementById("nav");
+      const searchSection = document.querySelector(".nav__search");
+      const homeButton = document.querySelector(".nav__home__button");
 
       window.addEventListener("scroll", () => {
         if (window.scrollY >= 100) {
           nav.classList.add("nav__black");
+          searchSection.style.opacity = "1";
+          homeButton.style.opacity = "1";
         } else {
           nav.classList.remove("nav__black");
+          searchSection.style.opacity = "0";
+          homeButton.style.opacity = "0";
         }
       });
     </script>
