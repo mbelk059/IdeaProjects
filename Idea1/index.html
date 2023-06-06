@@ -9,14 +9,19 @@
   </head>
   <body>
     <div class="nav" id="nav">
-      <img src="images/netflix-logo.png" alt="" class="nav__logo" />
-      <img src="images/netflix-avatar.png" alt="" class="nav__avatar" />
+      <a href="#" onclick="scrollToTop()">
+        <img src="images/netflix-logo.png" alt="" class="nav__logo" />
+      </a>
+
+      <a href="profile.html"
+        ><img src="images/netflix-avatar.png" alt="" class="nav__avatar" />
+      </a>
     </div>
 
     <!-- header -->
     <div class="banner">
       <div class="banner__contents">
-        <h1 class="banner__title">Movie</h1>
+        <h1 class="banner__title">Money Heist</h1>
         <div class="banner__buttons">
           <button class="banner__button">Play</button>
           <button class="banner__button">My List</button>
@@ -227,6 +232,10 @@
     </div>
 
     <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behaviour: "smooth" });
+      }
+
       const nav = document.getElementById("nav");
 
       window.addEventListener("scroll", () => {
