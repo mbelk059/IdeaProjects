@@ -11,7 +11,7 @@ body {
 .row__poster {
     width: 100%;
     object-fit: contain;
-    max-height: 100px;
+    max-height: 110px;
     margin-right: 10px;
     transition: transform 400ms;
 }
@@ -103,12 +103,12 @@ body {
 }
 
 .nav__logo {
-    width: 80px;
+    width: 90px;
     object-fit: contain;
 }
 
 .nav__avatar {
-    width: 30px;
+    width: 40px;
     object-fit: contain;
 }
 
