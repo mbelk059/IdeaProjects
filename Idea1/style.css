@@ -11,7 +11,7 @@ body {
 .row__poster {
     width: 100%;
     object-fit: contain;
-    max-height: 110px;
+    max-height: 125px;
     margin-right: 10px;
     transition: transform 400ms;
 }
@@ -122,6 +122,7 @@ body {
     z-index: 1;
     transition-timing-function: ease-in;
     transition: all 0.5s;
+    align-items: center;
 }
 
 .nav__black {
@@ -229,7 +230,7 @@ html {
 }
 
 .nav__search {
-    margin-right: 10px;
+    margin-left: auto;
 }
 
 .nav__search__input {
@@ -238,7 +239,7 @@ html {
     border-radius: 5px;
 }
 
-.nav__search-button {
+.nav__search__button {
     padding: 5px;
     background-color: #000;
     color: #fff;
@@ -246,9 +247,14 @@ html {
     border-radius: 5px;
   }
   
-  .nav__home-button {
+  .nav__home__button {
     color: #fff;
     margin-right: 10px;
-    font-weight: bold;
+    font-weight: normal;
     text-decoration: none;
+    padding-left: 50px;
+  }
+
+  .nav__home__button:hover {
+    font-weight: bold;
   }
