@@ -230,22 +230,57 @@ html {
 }
 
 .nav__search {
+    position: relative;
     margin-left: auto;
-}
-
-.nav__search__input {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-}
-
-.nav__search__button {
-    padding: 5px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    left: -25px;
   }
+  
+  .nav__search__input {
+    width: 0;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    outline: none;
+  }
+
+  .nav__search__button:hover ~ .nav__search__input,
+  .nav__search__input:focus {
+    width: 200px;
+    background-color: #222; /* Set the desired background color */
+    transition: width 0.3s ease, background-color 0.3s ease; 
+    border-radius: 20px;
+  }
+  
+  .nav__search__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 2;
+  }
+  
+  .nav__search__button i {
+    color: #fff;
+    font-size: 18px;
+    margin-left: -35px;
+  }
+  
+  .nav__search:hover .nav__search__input {
+    width: 200px;
+    transition: width 0.3s ease;
+  }
+  
+  .nav__search__button:hover .nav__search__input {
+    display: block;
+  }
+  
   
   .nav__home__button {
     color: #fff;
@@ -257,4 +292,11 @@ html {
 
   .nav__home__button:hover {
     font-weight: bold;
+  }
+
+  .nav__links {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
